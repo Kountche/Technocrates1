@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="369.0" prefWidth="280.0" spacing="10.0" style="-fx-background-color: #fafafa; -fx-background-radius: 20,20;" styleClass="card" stylesheets="@../assets/style.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CardFormationController">
+   <padding>
+      <Insets top="35.0" />
+   </padding>
+   <children>
+      <Label fx:id="lbNomEvent" alignment="CENTER" prefHeight="40.0" prefWidth="287.0" text="worshop javafx" textFill="#80187e">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <HBox alignment="CENTER" prefHeight="48.0" prefWidth="280.0">
+         <children>
+            <ImageView fitHeight="32.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icons8_pay_date_50px.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="lbDateEvent" alignment="CENTER" prefHeight="37.0" prefWidth="163.0" text="12/13/2021">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <Label fx:id="lbDescEvent" alignment="CENTER" prefHeight="21.0" prefWidth="285.0" text="apprendre les base de java ">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <HBox alignment="CENTER" prefHeight="40.0" prefWidth="280.0" spacing="20.0">
+         <children>
+            <ImageView fitHeight="33.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icons8_push_pin_64px.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="lbLieuEvent" prefHeight="40.0" prefWidth="147.0" text="Ghazela">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="70.0" prefWidth="280.0" spacing="20.0">
+         <children>
+            <ImageView fitHeight="31.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icons8_dollar_place_marker_30px.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="lbPrixEvent" prefHeight="37.0" prefWidth="148.0" text="8 DNT" textFill="#80187e">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <Button fx:id="btnParticiper" mnemonicParsing="false" onAction="#partciperEvenement" styleClass="buttons" stylesheets="@../assets/style.css" text="participer" />
+      <Button fx:id="btnDelEvent" mnemonicParsing="false" onAction="#annulerParticipation" styleClass="buttons" stylesheets="@../assets/style.css" text="annuler" />
+      <Label fx:id="idEvent" />
+   </children>
+</VBox>
